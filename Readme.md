@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Павел Еров](https://up.htmlacademy.ru/adaptive/24/user/1089973).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов] (https://htmlacademy.ru/profile/serj).
 
 ---
 
