@@ -5,8 +5,8 @@
     <title>Pink - приложение для ярких фото и общения</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
+    <header class="header">
+      <a class="header__logo-link">
         <img class="header__logo-image" src="img/logo-pink.svg" width="74" height="23" alt="логотип Pink">
       </a>
       <nav class="main-nav">
@@ -14,7 +14,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">
+              <a>
                 Главная
               </a>
             </li>
@@ -43,8 +43,9 @@
         <div class="header-description__wrapper">
           <h1 class="visually-hidden">Pink - приложение для ярких фото и общения</h1>
             <p class="header-description__slogan">
-              Взгляните на жизнь<br>иначе!
+              Взгляните на жизнь иначе!
             </p>
+            <img class="header-description__image-app" src="img/image-app.jpg" width="320" height="462" alt="приложение pink">
         </div>
       </div>
       <div class="header-downloader">
@@ -81,9 +82,8 @@
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="advantages__wrapper">
-          <p class="advantages__slogan">Устали от серости мегаполиса?<br>
-            Нам есть, что вам
-            предложить!
+          <p class="advantages__slogan">
+            Устали от серости мегаполиса?Нам есть, что вам предложить!
           </p>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -107,16 +107,18 @@
               </p>
             </li>
           </ul>
-          <img src="img/iphone.png" width="157" height="320" alt="iphone белого цвета на дисплея которого улыбающийся смайлик">
+          <img src="img/image-app-smiles.jpg" width="157" height="320" alt="iphone белого цвета на дисплея которого улыбающийся смайлик">
         </div>
       </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="reviws__wrapper slider">
+        <div class="reviews__wrapper slider">
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
             <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
             </blockquote>
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>
@@ -134,22 +136,22 @@
           <table class="tariffs__table">
             <tr class="tariff-rows">
               <td class="tariffs__item visually-hidden">
-                пустая ячейка
+
               </td>
 
               <td class="tariffs__title">
                 база
-                <p>1,99 usd</p>
+                <b>1,99 usd</b>
               </td>
 
               <td class="tariffs__title">
                 стандарт
-                <p>3,99 usd</p>
+                <b>3,99 usd</b>
               </td>
 
               <td class="tariffs__title">
                 анлим
-                <p>9,99 usd</p>
+                <b>9,99 usd</b>
               </td>
             </tr>
 
@@ -159,15 +161,15 @@
               </td>
 
               <td class="tariffs__item">
-                <span class="visually-hidden">галочка</span>
+                <span class="visually-hidden">в наличии в базовом тарифе</span>
               </td>
 
               <td class="tariffs__item visually-hidden">
-                <span class="visually-hidden">галочка</span>
+                <span class="visually-hidden">в наличии в стандартном тарифе</span>
               </td>
 
               <td class="tariffs__item visually-hidden">
-                <span class="visually-hidden">галочка</span>
+                <span class="visually-hidden">в наличии в тарифе анлим</span>
               </td>
             </tr>
 
@@ -177,15 +179,15 @@
               </td>
 
               <td class="tariffs__item visually-hidden">
-                <span class="visually-hidden">крестик</span>
+                <span class="visually-hidden">отсутствуют в базовом тарифе</span>
               </td>
 
               <td class="tariffs__item visually-hidden">
-                <span class="visually-hidden">галочка</span>
+                <span class="visually-hidden">в наличии в стандартном тарифе</span>
               </td>
 
               <td class="tariffs__item visually-hidden">
-                <span class="visually-hidden">галочка</span>
+                <span class="visually-hidden">в наличии в тарифе анлим</span>
               </td>
             </tr>
 
@@ -195,15 +197,15 @@
               </td>
 
               <td class="tariffs__item visually-hidden">
-                <span class="visually-hidden">крестик</span>
+                <span class="visually-hidden">отсутствуют в базовом тарифе</span>
               </td>
 
               <td class="tariffs__item visually-hidden">
-                <span class="visually-hidden">галочка</span>
+                <span class="visually-hidden">отсутствуют в стандартном тарифе</span>
               </td>
 
               <td class="tariffs__item visually-hidden">
-                <span class="visually-hidden">галочка</span>
+                <span class="visually-hidden">в наличии в тарифе анлим</span>
               </td>
             </tr>
           </table>
@@ -215,59 +217,69 @@
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__slogan">
-            Остались вопросы?<br>Свяжитесь с нами!
+            Остались вопросы?Свяжитесь с нами!
           </p>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <p class="contacts__text">Звоните:</p>
-              <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <p class="contacts__text">
+                Звоните:
+              </p>
+              <a class="contacts__phone" href="tel:+78125556666">
+                +7 (812) 555-66-66
+              </a>
             </li>
 
             <li class="contacts__item">
-              <p class="contacts__text">Пишите:</p>
-              <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <p class="contacts__text">
+                Пишите:
+              </p>
+              <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
             </li>
 
             <li class="contacts__item">
-              <p class="contacts__text">Приезжайте в гости::</p>
-              <p class="contacts__adress">ул. Большая<br>
-                Конюшенная, 19/8
+              <p class="contacts__text">
+                Приезжайте в гости:
+              </p>
+              <p class="contacts__adress">
+                ул. Большая Конюшенная, 19/8
               </p>
             </li>
           </ul>
           <img class="contacts__map" src="img/map.jpg" width="320" height="200" alt="карта, отображающая местонахождение компании">
         </div>
-        <div class="footer-logo">
-          <div class="footer-logo__wrapper">
-            <a class="footer-logo__logo">
-              <img class="footer-logo__image" src="img/logotype-blue-tablet.png" width="145" height="40" alt="логотип pink">
-            </a>
-            <ul class="social-list">
-              <li class="social-list__item">
-                <a class="social-list__link social-list__link--twitter" href="#">
-                  <span class="visually-hidden">Твиттер</span>
-                </a>
-              </li>
-
-              <li class="social-list__item">
-                <a class="social-list__link social-list__link--facebook" href="#">
-                  <span class="visually-hidden">Фейсбук</span>
-                </a>
-              </li>
-
-              <li class="social-list__item">
-                <a class="social-list__link social-list__link--youtube" href="#">
-                  <span class="visually-hidden">Ютуб</span>
-                </a>
-              </li>
-            </ul>
-            <p class="footer-logo__text">
-              Разработано
-              <a class="footer-logo__link">
-                <img class="footer-logo__developed" src="img/htmlacademy.svg" width="27" height="34" alt="логотип htmlacademy">
+      </section>
+      <section class="footer">
+        <div class="footer__wrapper">
+          <a class="footer__logo">
+            <img class="footer__image" src="img/logotype-pink-mobile.svg" width="145" height="40" alt="логотип pink">
+          </a>
+          <ul class="footer__social-list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--twitter" href="#">
+                <span class="visually-hidden">Твиттер</span>
               </a>
-            </p>
-          </div>
+            </li>
+
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--facebook" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--youtube" href="#">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__text">
+            Разработано
+            <a class="footer__link-logo" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="footer__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="логотип htmlacademy">
+            </a>
+          </p>
         </div>
       </section>
     </footer>
