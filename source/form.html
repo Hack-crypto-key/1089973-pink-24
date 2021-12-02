@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html class="page-form" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Форма: Pink</title>
   </head>
-  <body class="page-form__body">
-    <header class="header-form">
-      <a class="header-form__logo-link" href="index.html">
-        <img class="header-form__logo-image" src="img/logo-pink.svg" width="74" height="23" alt="логотип Pink">
+  <body class="page__body">
+    <header class="header">
+      <a class="header__logo-link" href="index.html">
+        <img class="header__logo-image" src="img/logo-pink.svg" width="74" height="23" alt="логотип Pink">
       </a>
-      <nav class="form-nav">
-        <button class="form-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="form-nav__wrapper">
-          <ul class="form-nav__list">
-            <li class="form-nav__item">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a href="index.html">
                 Главная
               </a>
             </li>
 
-            <li class="form-nav__item">
-              <a href="#">
+            <li class="main-nav__item">
+              <a href="catalog.html">
                 Фотографии
               </a>
             </li>
 
-            <li class="form-nav__item">
-              <a href="#">
+            <li class="main-nav__item current">
+              <a>
                 Конкурс
               </a>
             </li>
 
-            <li class="form-nav__item">
+            <li class="main-nav__item">
               <a href="#">
                 HTML academy
               </a>
@@ -48,96 +48,96 @@
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           </p>
           <form class="form-fields" method="post" action="https://echo.htmlacademy.ru">
-            <div class="form-fields__user-data">
-              <p class="form-fields__surname">
+            <div class="form-fields__user-data general-block">
+              <p class="general-block__surname">
                 <label for="surname">Фамилия:</label>
                 <input id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
               </p>
-              <p class="form-fields__name">
+              <p class="general-block__name">
                 <label for="name">Имя:</label>
                 <input id="name" type="text" name="name" placeholder="Введите ваше имя *">
               </p>
-              <p class="form-fields__middle-name">
+              <p class="general-block__middle-name">
                 <label for="middle-name">Отчество:</label>
                 <input id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
               </p>
             </div>
-            <fieldset class="form-fields__quiz">
+            <fieldset class="form-fields__quiz general-fields">
               <legend>Ваши безбашенные достижения в путешествии</legend>
-              <ul class="form-fields__list">
-                <li class="form-fields__item">
+              <ul class="general-fields__list">
+                <li class="general-fields__item general-fields__item--checkbox">
                   <input type="checkbox" name="selfie-shark" id="selfie-shark" checked>
                   <label for="selfie-shark">Сделал селфи с акулой</label>
                 </li>
 
-                <li class="form-fields__item">
+                <li class="general-fields__item general-fields__item--checkbox">
                   <input type="checkbox" name="burned-on-beach" id="burned-on-beach" checked>
                   <label for="burned-on-beach">Обгорел на пляже</label>
                 </li>
 
-                <li class="form-fields__item">
+                <li class="general-fields__item general-fields__item--checkbox">
                   <input type="checkbox" name="saw-chuck-norris" id="saw-chuck-norris">
                   <label for="saw-chuck-norris">Видел Чака Норриса</label>
                 </li>
 
-                <li class="form-fields__item">
+                <li class="general-fields__item general-fields__item--checkbox">
                   <input type="checkbox" name="bought-souvenirs" id="bought-souvenirs">
                   <label for="bought-souvenirs">Накупил сувениров</label>
                 </li>
 
-                <li class="form-fields__item">
+                <li class="general-fields__item general-fields__item--checkbox">
                   <input type="checkbox" name="held-tower" id="held-tower" checked>
                   <label for="held-tower">Удержал башню</label>
                 </li>
 
-                <li class="form-fields__item">
+                <li class="general-fields__item general-fields__item--checkbox">
                   <input type="checkbox" name="trashed-hotel" id="trashed-hotel">
                   <label for="trashed-hotel">Разгромил отель</label>
                 </li>
               </ul>
             </fieldset>
-            <div class="form-fields__user-data">
-              <p class="form-fields__phone">
+            <div class="form-fields__user-data general-block">
+              <p class="general-block__phone">
                 <label for="phone">Номер телефона</label>
                 <input id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
               </p>
-              <p class="form-fields__mail">
+              <p class="general-block__mail">
                 <label for="mail">Адрес почты</label>
                 <input id="mail" type="email" name="mail" placeholder="Введите почту *">
               </p>
             </div>
-            <fieldset class="form-fields__quiz">
+            <fieldset class="form-fields__quiz general-fields">
               <legend>С каким приложением путешествовали</legend>
-              <ul class="form-fields__list">
-                <li class="form-fields__item">
+              <ul class="general-fields__list">
+                <li class="general-fields__item general-fields__item--radio">
                   <input type="radio" name="pink-ios" id="pink-ios" checked>
                   <label for="pink-ios">Pink для iOS</label>
                 </li>
 
-                <li class="form-fields__item">
+                <li class="general-fields__item general-fields__item--radio">
                   <input type="radio" name="pink-android" id="pink-android">
                   <label for="pink-android">Pink для android</label>
                 </li>
 
-                <li class="form-fields__item">
+                <li class="general-fields__item general-fields__item--radio">
                   <input type="radio" name="windows-phone" id="windows-phone">
                   <label for="windows-phone">Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
-            <div class="form-fields__user-data">
-              <p class="form-fields__text">
+            <div class="form-fields__user-data general-block">
+              <p class="general-block__text">
                 <label for="form-text">Опишите свои эмоции</label>
                 <textarea id="form-text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </p>
             </div>
-            <button class="form-fields__button" type="submit">Отправить</button>
+            <button class="form-fields__button general-button" type="submit">Отправить</button>
             <small>* — обязательные поля</small>
           </form>
         </div>
       </section>
     </main>
-    <footer class="footer-form">
+    <footer class="page-footer">
       <section class="footer">
         <div class="footer__wrapper">
           <a class="footer__logo">
@@ -177,7 +177,7 @@
         <p class="modal-failure__text">
           Проверьте поля, выделенные красным,скорее всего вы забыли их заполнить
         </p>
-        <button class="modal-failure__button">ок</button>
+        <button class="modal-failure__button general-button">ок</button>
       </div>
     </section>
     <section class="modal-success">
@@ -186,7 +186,7 @@
         <p class="modal-success__text">
           Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
         </p>
-        <button class="modal-success__button">Закрыть окно</button>
+        <button class="modal-success__button general-button">Закрыть окно</button>
       </div>
     </section>
   </body>
