@@ -6,6 +6,7 @@
 }
 
 .reviews__wrapper {
+  text-align: center;
   .container();
 }
 
@@ -20,4 +21,12 @@
   line-height: 30px;
   font-weight: 400;
   color: @midnight;
+}
+
+.reviews__author-description {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }

@@ -1,9 +1,21 @@
 .header-downloader__list {
   .clear-list();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 204px;
+  }
 }
 
 .header-downloader__wrapper {
   .container();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+  }
 }
 
 .header-downloader {
@@ -14,10 +26,18 @@
   a {
     color: @white;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .header-downloader__text {
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+
+  @media (min-height: @tablet-width) {
+    font-size: 18px;
+  }
 }

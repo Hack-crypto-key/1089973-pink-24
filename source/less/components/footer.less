@@ -6,7 +6,21 @@
 }
 
 .footer__wrapper {
+  display: block;
+  text-align: center;
   .container();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+  }
 }
 
 .footer__social-list {

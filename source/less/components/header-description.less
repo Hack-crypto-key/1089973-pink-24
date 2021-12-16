@@ -1,9 +1,26 @@
 .header-description__wrapper {
+  text-align: center;
   .container();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 620px;
+  }
 }
 
 .header-description__slogan {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }

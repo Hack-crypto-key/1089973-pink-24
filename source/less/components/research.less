@@ -1,0 +1,36 @@
+.research {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+
+  @media (min-width: @desktop-width) {
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+
+.research__wrapper {
+  display: none;
+  .container();
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+  }
+}
+
+.research__chapter {
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: @black;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 36px;
+  }
+}
