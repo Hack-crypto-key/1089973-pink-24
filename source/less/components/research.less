@@ -13,11 +13,11 @@
 
 .research__wrapper {
   display: none;
-  .container();
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
+    .container();
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 620px;
   }
 }
@@ -27,6 +27,7 @@
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    width: 168px;
     color: @black;
   }
 

@@ -14,13 +14,33 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .reviews__text {
+  text-align: center;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: @midnight;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    .container();
+    font-size: 18px;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 688px;
+  }
 }
 
 .reviews__author-description {
@@ -28,5 +48,9 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
   }
 }

@@ -6,6 +6,16 @@
   color: inherit;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 50px;
+  right: 45px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .main-nav__wrapper {
   text-align: center;
   .container();
@@ -18,10 +28,11 @@
     display: flex;
     justify-content: space-between;
     width: 940px;
-    padding-left: 173px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
+    margin: 0 auto;
+    padding: 0 20px;
     text-transform: none;
   }
 }
