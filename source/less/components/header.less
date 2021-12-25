@@ -1,9 +1,24 @@
 .header {
+  position: relative;
   color: @white;
   background: @background-color-header;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+}
 
-  &--inner {
-    background-image: url("../img/back-mobile.jpg");
-    background-repeat: no-repeat;
+.header__logo-link {
+  display: block;
+}
+
+.header__logo-image {
+  display: block;
+  height: 66px;
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 20px;
   }
 }
