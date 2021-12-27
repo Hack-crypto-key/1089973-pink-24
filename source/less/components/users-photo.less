@@ -1,13 +1,51 @@
-.users-photo__caption {
+.users-photo {
   font-size: 12px;
   line-height: 24px;
+}
+
+.users-photo__caption {
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    .container();
+    text-align: right;
+    width: 110px;
+    padding-left: 190px;
+  }
+}
+
+.users-photo__author {
+  @media (min-width: @tablet-width) {
+    .container();
+    text-align: left;
+    width: 180px;
+    padding-right: 357px;
+  }
+}
+
+.users-photo__author-name {
+  font-size: 14px;
 }
 
 .users-photo__time {
-  font-size: 12px;
-  line-height: 24px;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.users-photo__image {
+  .container();
+  display: block;
+  align-items: center;
+}
+
+.users-photo__text {
+  font-size: 14px;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    .container();
+    width: 520px;
+    text-align: left;
+  }
 }

@@ -6,4 +6,20 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .container();
+    font-size: 18px;
+    width: 422px;
+  }
+}
+
+.upload-photo__form {
+  @media (min-width: @tablet-width) {
+    .container();
+    display: flex;
+    justify-content: space-between;
+    width: 605px;
+  }
 }

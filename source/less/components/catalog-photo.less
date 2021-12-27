@@ -1,6 +1,19 @@
 .catalog-photo__slogan {
   font-size: 14px;
   line-height: 30px;
+  font-weight: 400;
+  width: 280px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .container();
+    font-size: 18px;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 572px;
+  }
 }
 
 .catalog-photo__wrapper {

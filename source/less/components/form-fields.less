@@ -1,4 +1,73 @@
+.form-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-fields__user-data {
+  @media (min-width: @tablet-width) {
+    &--first {
+      .container();
+      width: 618px;
+      order: 1;
+    }
+
+    &--second {
+      order: 3;
+    }
+
+    &--third {
+      order: 5;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--second {
+      display: flex;
+      justify-content: space-between;
+      width: 936px;
+    }
+  }
+}
+
+
 .form-fields__quiz {
   border: none;
   background: @white-smoke;
+
+  @media (min-width: @tablet-width) {
+    &--first {
+      .container();
+      width: 616px;
+      order: 4;
+    }
+
+    &--second {
+      order: 2;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--first {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 936px;
+    }
+  }
+}
+
+.form-fields__button {
+  @media (min-width: @tablet-width) {
+    .container();
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    order: 6;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+  }
 }

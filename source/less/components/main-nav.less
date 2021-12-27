@@ -1,4 +1,5 @@
 .main-nav {
+  position: relative;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
@@ -31,6 +32,10 @@
 
 .main-nav__list {
   .clear-list();
+
+  &--inner {
+    display: none;
+  }
 
   @media (min-width: @desktop-width) {
     .container();

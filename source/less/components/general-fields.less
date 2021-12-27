@@ -1,8 +1,15 @@
 .general-fields {
   legend {
+    text-align: center;
     color: @cerise;
     line-height: 18px;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      .container();
+      width: 616px;
+      padding-top: 15px;
+    }
   }
 
   label {
@@ -12,4 +19,18 @@
 
 .general-fields__list {
   .clear-list();
+
+  @media (min-width: @desktop-width) {
+    &--checkbox {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+.general-fields__item {
+  @media (min-width: @tablet-width) {
+    .container();
+    width: 300px;
+  }
 }

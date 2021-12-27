@@ -7,3 +7,26 @@
 .form__wrapper {
   .container();
 }
+
+.form__slogan {
+  width: 280px;
+  text-align: center;
+
+  &--sentence {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    .container();
+    font-size: 18px;
+    width: 490px;
+
+    &--sentence {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 756px;
+  }
+}
