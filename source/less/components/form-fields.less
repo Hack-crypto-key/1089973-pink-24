@@ -1,6 +1,12 @@
 .form-fields {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .form-fields__user-data {
@@ -21,9 +27,18 @@
   }
 
   @media (min-width: @desktop-width) {
+    &--first {
+      width: 433px;
+    }
+
     &--second {
       display: flex;
       justify-content: space-between;
+      width: 936px;
+    }
+
+    &--third {
+      .container();
       width: 936px;
     }
   }
@@ -33,6 +48,10 @@
 .form-fields__quiz {
   border: none;
   background: @white-smoke;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+  }
 
   @media (min-width: @tablet-width) {
     &--first {

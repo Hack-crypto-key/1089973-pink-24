@@ -36,14 +36,14 @@
     .container();
     display: flex;
     width: 620px;
-    margin-top: 105px;
+    align-self: flex-start;
 
     &--two {
-      margin-top: 15px;
+      padding-top: 15px;
     }
 
     &--three {
-      margin-top: 15px;
+      padding-top: 15px;
     }
   }
 }
@@ -68,6 +68,14 @@
     width: 276px;
     padding-left: 15px;
     resize: none;
+
+    @media (min-width: @tablet-width) {
+      width: 496px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 816px;
+    }
   }
 }
 
