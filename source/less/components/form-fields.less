@@ -12,12 +12,14 @@
 .form-fields__user-data {
   @media (min-width: @tablet-width) {
     &--first {
-      .container();
-      width: 618px;
+      margin-top: 35px;
+      width: 433px;
+      align-items: center;
       order: 1;
     }
 
     &--second {
+      .container();
       order: 3;
     }
 
@@ -28,10 +30,13 @@
 
   @media (min-width: @desktop-width) {
     &--first {
-      width: 433px;
+      .container();
+      margin-top: 35px;
+      width: 453px;
     }
 
     &--second {
+      margin-top: 35px;
       display: flex;
       justify-content: space-between;
       width: 936px;
@@ -39,6 +44,7 @@
 
     &--third {
       .container();
+      margin-top: 35px;
       width: 936px;
     }
   }
@@ -56,12 +62,16 @@
   @media (min-width: @tablet-width) {
     &--first {
       .container();
+      margin-top: 35px;
       width: 616px;
       order: 4;
     }
 
     &--second {
+      .container();
+      margin-top: 35px;
       order: 2;
+      width: 331px;
     }
   }
 

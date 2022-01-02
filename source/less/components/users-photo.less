@@ -44,8 +44,18 @@
   font-weight: 400;
 
   @media (min-width: @tablet-width) {
+    &--first {
+      .container();
+      width: 520px;
+      text-align: left;
+    }
     .container();
-    width: 520px;
-    text-align: left;
+    width: 232px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &--first {
+      width: 874px;
+    }
   }
 }
