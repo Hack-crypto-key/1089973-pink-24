@@ -8,32 +8,32 @@
   </head>
   <body class="page__body">
     <header class="header header--inner">
-      <a class="header__logo-link" href="index.html">
-        <img class="header__logo-image" src="img/logo-pink.svg" width="74" height="23" alt="логотип Pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
+      <nav class="header__nav">
+        <a class="header__logo-link" href="index.html">
+          <img class="header__logo-image" src="img/logo-pink.svg" width="74" height="23" alt="логотип Pink">
+        </a>
+        <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="header__wrapper-nav">
+          <ul class="header__list-nav">
+            <li class="header__item-nav">
               <a href="index.html">
                 Главная
               </a>
             </li>
 
-            <li class="main-nav__item main-nav__item--current">
+            <li class="header__item-nav header__item-nav--current">
               <a>
                 Фотографии
               </a>
             </li>
 
-            <li class="main-nav__item">
+            <li class="header__item-nav">
               <a href="form.html">
                 Конкурс
               </a>
             </li>
 
-            <li class="main-nav__item">
+            <li class="header__item-nav">
               <a href="#">
                 HTML academy
               </a>
@@ -53,18 +53,18 @@
             Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
           <ul class="catalog-photo__list">
-            <li class="catalog-photo__item users-photo">
+            <li class="catalog-photo__item catalog-photo__item--one users-photo">
               <p class="users-photo__caption">
                 Панорама дня
               </p>
               <a class="users-photo__image-link" href="#">
                 <img class="users-photo__image users-photo__image--big" src="img/panorama-image.jpg" width="320" height="137" alt="панорамная фоторафия">
               </a>
-              <p>
-                <b>Анна</b>
+              <p class="users-photo__author">
+                <b class="users-photo__author-name">Анна</b>
                 <span class="users-photo__time">(<time datetime="17:05">5</time> минут назад)</span>
               </p>
-              <p class="users-photo__text">
+              <p class="users-photo__text users-photo__text--first">
                 Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
               <div class="likes">
@@ -79,8 +79,8 @@
                   <img class="users-photo__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Белый автомобиль на парковке, напротив которого камера для съемки видео">
                 </a>
               </p>
-              <p>
-                <b>Левон</b>
+              <p class="users-photo__author">
+                <b class="users-photo__author-name">Левон</b>
                 <span class="users-photo__time">(<time datetime="12:05">5</time> часов назад)</span>
               </p>
               <p class="users-photo__text">
@@ -98,8 +98,8 @@
                   <img class="users-photo__image" src="img/photo-2-mobile.jpg" width="280" height="180" alt="Барабанная установка">
                 </a>
               </p>
-              <p>
-                <b>Антон</b>
+              <p class="users-photo__author">
+                <b class="users-photo__author-name">Антон</b>
                 <span class="users-photo__time">(<time datetime="05:05">12</time> часов назад)</span>
               </p>
               <p class="users-photo__text">
@@ -117,8 +117,8 @@
                   <img class="users-photo__image" src="img/photo-3-mobile.jpg" width="280" height="180" alt="Застекленное помещение в центре которого отсутствует одно стекло">
                 </a>
               </p>
-              <p>
-                <b>Борис</b>
+              <p class="users-photo__author">
+                <b class="users-photo__author-name">Борис</b>
                 <span class="users-photo__time">(<time datetime="02:05">20</time> часов назад)</span>
               </p>
               <p class="users-photo__text">
@@ -133,11 +133,11 @@
             <li class="catalog-photo__item users-photo">
               <p>
                 <a class="users-photo__image-link" href="#">
-                  <img class=" users-photo__users" src="img/photo-4-mobile.jpg" width="280" height="180" alt="Кубанская бахча">
+                  <img class=" users-photo__image" src="img/photo-4-mobile.jpg" width="280" height="180" alt="Кубанская бахча">
                 </a>
               </p>
-              <p>
-                <b>Сергей</b>
+              <p class="users-photo__author">
+                <b class="users-photo__author-name">Сергей</b>
                 <span class="users-photo__time">(<time datetime="10:05">25</time> часов назад)</span>
               </p>
               <p class="users-photo__text">
@@ -155,8 +155,8 @@
                   <img class="users-photo__image" src="img/photo-5-mobile.jpg" width="280" height="180" alt="Человек сидит ны горной возвышенности">
                 </a>
               </p>
-              <p>
-                <b>Максим</b>
+              <p class="users-photo__author">
+                <b class="users-photo__author-name">Максим</b>
                 <span class="users-photo__time">(<time datetime="19:05">40</time> часов назад)</span>
               </p>
               <p class="users-photo__text">
@@ -174,8 +174,8 @@
                   <img class="users-photo__image" src="img/photo-6-mobile.jpg" width="280" height="180" alt="крыло летящего самолета">
                 </a>
               </p>
-              <p>
-                <b>Надежда</b>
+              <p class="users-photo__author">
+                <b class="users-photo__author-name">Надежда</b>
                 <span class="users-photo__time">(<time datetime="22:05">45</time> часов назад)</span>
               </p>
               <p class="users-photo__text">
@@ -205,11 +205,11 @@
                 <input type="range" id="crop" name="crop" min="0" max="100">
                 <label class="visually-hidden" for="crop">Обрезка</label>
               </div>
-              <div class="photo-form__range-slider">
+              <div class="photo-form__range-slider photo-form__range-slider--fill">
                 <input type="range" id="fill" name="fill" min="0" max="100">
                 <label class="visually-hidden" for="fill">Заливка</label>
               </div>
-              <div class="photo-form__range-slider">
+              <div class="photo-form__range-slider photo-form__range-slider--contrast">
                 <input type="range" id="contrast" name="contrast" min="0" max="100">
                 <label class="visually-hidden" for="contrast">Контраст</label>
               </div>

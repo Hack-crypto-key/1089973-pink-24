@@ -6,4 +6,38 @@
 
 .form__wrapper {
   .container();
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding: 0 130px;
+    width: 940px;
+  }
+}
+
+.form__slogan {
+  width: 280px;
+  text-align: center;
+
+  &--sentence {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    .container();
+    font-size: 18px;
+    width: 490px;
+
+    &--sentence {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 35px;
+    width: 756px;
+  }
 }
