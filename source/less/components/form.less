@@ -6,6 +6,16 @@
 
 .form__wrapper {
   .container();
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding: 0 130px;
+    width: 940px;
+  }
 }
 
 .form__slogan {

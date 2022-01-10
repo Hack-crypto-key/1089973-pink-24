@@ -33,7 +33,6 @@
 
 .general-block__pattern {
   @media (min-width: @tablet-width) {
-    .container();
     display: flex;
     width: 620px;
     align-self: flex-start;
@@ -46,6 +45,11 @@
       padding-top: 15px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 433px;
+  }
 }
 
 .general-block__data {
@@ -55,6 +59,10 @@
     flex-direction: column-reverse;
     align-items: center;
     width: 556px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 371px;
   }
 }
 
